@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>BMI Calculator</title>
 </head>
 <body>
@@ -11,9 +12,10 @@
             Калькулятор ИМТ
         </h1>
 
-        <input type="text" placeholder="Ваш рост">
-        <input type="text" placeholder="Ваш вес">
-        <input type="text" placeholder="Возраст">
+        <input type="text" id="height" placeholder="Ваш рост">
+        <input type="text" id="weight" placeholder="Ваш вес">
+        <input type="text" id="age" placeholder="Возраст">
+
 
         <label for="gender">Ваш пол:</label>
         <select id="gender" name="gender">
@@ -21,6 +23,12 @@
             <option value="female">Женский</option>
         </select>
 
+        <button type="submit" id="submit">Расчитать</button>
+
+        <input type="text" id="result" readonly>
+
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
